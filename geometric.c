@@ -113,8 +113,9 @@ void	print_hexagon(int side)
 			y2 = x2 * sqrt(3);
 			my_mlx_pixel_put(&img, 300 + x, 100 + y2, 0x00FF0000);
 			my_mlx_pixel_put(&img, 300 + x, 100 - y2, 0x00FF0000);
+			x2 -= 0.1;
 			x += 0.1;
 		}
 		sides++;
+		//write the horizont line
 	}
-}
